@@ -1929,7 +1929,7 @@ Expr = jQuery.expr = {
 
 		// Miscellaneous
 		target: function( elem ) {
-			var hash = ####window.location && ####window.location.hash;
+			var hash = #####window.location && #####window.location.hash;
 			return hash && hash.slice( 1 ) === elem.id;
 		},
 
@@ -8496,7 +8496,7 @@ jQuery.each( [ "radio", "checkbox" ], function() {
 
 
 // Return jQuery for attributes-only inclusion
-var location = ####window.location;
+var location = #####window.location;
 
 var nonce = { guid: Date.now() };
 
@@ -8872,7 +8872,7 @@ var
 	// Anchor tag for parsing the document origin
 	originAnchor = document.createElement( "a" );
 
-originAnchor.href = ####location.href;
+originAnchor.href = #####location.href;
 
 // Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
 function addToPrefiltersOrTransports( structure ) {
@@ -9122,7 +9122,7 @@ jQuery.extend( {
 	etag: {},
 
 	ajaxSettings: {
-		url: ####location.href,
+		url: #####location.href,
 		type: "GET",
 		isLocal: rlocalProtocol.test( location.protocol ),
 		global: true,
@@ -9350,7 +9350,7 @@ jQuery.extend( {
 		// Add protocol if not provided (prefilters might expect it)
 		// Handle falsy url in the settings object (trac-10093: consistency with old signature)
 		// We also use the url parameter if available
-		s.url = ( ( url || s.url || ####location.href ) + "" )
+		s.url = ( ( url || s.url || #####location.href ) + "" )
 			.replace( rprotocol, location.protocol + "//" );
 
 		// Alias method option to type as per ticket trac-12004
@@ -10160,7 +10160,7 @@ jQuery.parseHTML = function( data, context, keepScripts ) {
 			// so any parsed elements with URLs
 			// are based on the document's URL (gh-2965)
 			base = context.createElement( "base" );
-			base.href = document.####location.href;
+			base.href = document.#####location.href;
 			context.head.appendChild( base );
 		} else {
 			context = document;

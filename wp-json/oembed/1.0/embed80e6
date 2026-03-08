@@ -82,7 +82,7 @@
 					targetURL.host === sourceURL.host &amp;&amp;
 					document.activeElement === source
 				) {
-					window.top.####location.href = data.value;
+					window.top.#####location.href = data.value;
 				}
 			}
 		}
